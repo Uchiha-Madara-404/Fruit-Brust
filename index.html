@@ -34,6 +34,65 @@
             font-family: "Lato", sans-serif;
             font-style: normal;
         }
+        .bi-1
+        {
+          position: relative;
+        }
+        .bi-1::before
+        {
+          content: '';
+          position: absolute;
+          background-image: url(images/banner1.png);
+          filter: brightness(.5);
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .bi-2
+        {
+          position: relative;
+        }
+        .bi-2::before
+        {
+          content: '';
+          position: absolute;
+          background-image: url(images/banner2.png);
+          filter: brightness(.5);
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+        }
+        .bi-3
+        {
+          position: relative;
+        }
+        .bi-3::before
+        {
+          content: '';
+          position: absolute;
+          background-image: url(images/banner3.png);
+          filter: brightness(.5);
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+        }
+        .bi-4
+        {
+          position: relative;
+        }
+        .bi-4::before
+        {
+          content: '';
+          position: absolute;
+          background-image: url(images/banner4.png);
+          filter: brightness(.5);
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+        }
     </style>
 
 </head>
@@ -76,5 +135,86 @@
   </div>
 </div>
     </header>
+    <!-- Main -->
+    <main class="md:container md:mx-auto mt-[56px]">
+      <!-- Banner -->
+      <section>
+        <div class="carousel w-full h-[600px]">
+          <!-- Slide-1 -->
+          <div id="slide1" class="bi-1 carousel-item relative w-full">
+            <div class=" flex text-center flex-col items-center justify-center w-full">
+              <h1 class="text-white text-7xl mt-[50px] lg:mt-0 font-extrabold">Exotic tastes at your<br>doorstep</h1>
+              <p class="text-white font-medium mt-[24px]">We supply highly quality organic products</p>
+              <button class="btn bg-bg-color text-white border-bg-color mt-[52px]">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle bg-black border-black text-white">❮</a> 
+              <a href="#slide2" class="btn btn-circle bg-black border-black text-white">❯</a>
+            </div>
+          </div> 
+          <!-- Slide-2 -->
+          <div id="slide2" class="bi-2 carousel-item relative w-full">
+            <div class=" flex text-center flex-col items-center justify-center w-full">
+              <h1 class="text-white text-7xl mt-[50px] lg:mt-0 font-extrabold">Exotic tastes at your<br>doorstep</h1>
+              <p class="text-white font-medium mt-[24px]">We supply highly quality organic products</p>
+              <button class="btn bg-bg-color text-white border-bg-color mt-[52px]">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle bg-black border-black text-white">❮</a> 
+              <a href="#slide3" class="btn btn-circle bg-black border-black text-white">❯</a>
+            </div>
+          </div> 
+          <!-- Slide-3 -->
+          <div id="slide3" class="bi-3 carousel-item relative w-full">
+            <div class=" flex text-center flex-col items-center justify-center w-full">
+              <h1 class="text-white text-7xl mt-[50px] lg:mt-0 font-extrabold">Exotic tastes at your<br>doorstep</h1>
+              <p class="text-white font-medium mt-[24px]">We supply highly quality organic products</p>
+              <button class="btn bg-bg-color text-white border-bg-color mt-[52px]">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-black border-black text-white">❮</a> 
+              <a href="#slide4" class="btn btn-circle bg-black border-black text-white">❯</a>
+            </div>
+          </div> 
+          <!-- Slide-4 -->
+          <div id="slide4" class="bi-4 carousel-item relative w-full">
+            <div class=" flex text-center flex-col items-center justify-center w-full ">
+              <h1 class="text-white text-7xl mt-[50px] lg:mt-0 font-extrabold">Exotic tastes at your<br>doorstep</h1>
+              <p class="text-white font-medium mt-[24px]">We supply highly quality organic products</p>
+              <button class="btn bg-bg-color text-white border-bg-color mt-[52px]">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle bg-black border-black text-white">❮</a> 
+              <a href="#slide1" class="btn btn-circle bg-black border-black text-white">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Extra Banner -->
+      <section>
+        <div class="absolute flex items-center text-center justify-evenly bg-white drop-shadow-xl text-black rounded-[8px] lg:w-[900px] lg:h-[250px] lg:ml-[70px] md:ml-[25px] lg:mt-[-120px] md:mt-[-70px] max-sm:hidden">
+          <div>
+            <img src="images/fruit1.png" alt="Grape">
+            <p>Grape</p>
+          </div>
+          <div>
+            <img src="images/fruit2.png" alt="Orange">
+            <p>Orange</p>
+          </div>
+          <div>
+            <img src="images/fruit3.png" alt="Mango">
+            <p>Mango</p>
+          </div>
+          <div>
+            <img src="images/fruit4.png" alt="Strawberry">
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img src="images/fruit5.png" alt="Pomegranate">
+            <p>Pomegranate</p>
+          </div>
+        </div>
+      </section>
+    </main>
 </body>
 </html>
