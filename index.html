@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-Brust</title>
+
+    <!-- Tailwind and Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customize tailwind config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bg-color':'#F85559',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Google Font-lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .lato
+        {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+<body class="lato">
+    <!-- Header -->
+    <header class="md:container md:mx-auto mt-[50px]">
+        <!-- Navbar -->
+        <div class="navbar lg:bg-bg-color md:bg-bg-color rounded-[600px]">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Shop</a></li>
+        <li><a>All Fruits</a></li>
+      </ul>
+    </div>
+    <!-- lg device -->
+    <div class="navbar-center hidden lg:flex md:flex">
+      <ul class="flex gap-[30px] ">
+        <li><a class="link no-underline text-white font-medium">Home</a></li>
+        <li><a class="link no-underline text-white font-medium">About Us</a></li>
+        <li><a class="link no-underline text-white font-medium">Shop</a></li>
+        <li><a class="link no-underline text-white font-medium">All Fruits</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <img src="images/logo.png" alt="logo">
+    <a class="link font-bold lg:text-4xl no-underline lg:text-white md:text-white">Fruit Brust</a>
+  </div>
+  <div class="navbar-end max-sm:hidden">
+    <label class="input input-bordered flex items-center gap-2 rounded-[56px]">
+      <input type="text" class="grow" placeholder="Search"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+    </label>
+  </div>
+</div>
+    </header>
+</body>
+</html>
