@@ -93,6 +93,23 @@
           height: 100%;
           width: 100%;
         }
+        .team-banner
+        {
+          position: relative;
+        }
+        .team-banner::before
+        {
+          content: '';
+          position: absolute;
+          background-image: url(images/team.png);
+          filter: brightness(.5);
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
     </style>
 
 </head>
@@ -192,14 +209,14 @@
       </section>
       <!-- Extra Banner -->
       <section>
-        <div class="absolute flex items-center text-center justify-evenly bg-white drop-shadow-xl text-black rounded-[8px] lg:w-[900px] lg:h-[250px] lg:ml-[70px] md:ml-[25px] lg:mt-[-120px] md:mt-[-70px] max-sm:hidden">
+        <div class="absolute flex items-center text-center justify-evenly bg-white drop-shadow-xl text-black rounded-[8px] lg:w-[900px] lg:h-[250px] lg:ml-[70px] xl:ml-[180px] 2xl:ml-[280px] md:ml-[25px] lg:mt-[-120px] md:mt-[-70px] max-sm:hidden">
           <div>
             <img src="images/fruit1.png" alt="Grape">
             <p>Grape</p>
           </div>
           <div>
-            <img src="images/fruit2.png" alt="Orange">
-            <p>Orange</p>
+            <img src="images/fruit2.png" alt="red">
+            <p>red</p>
           </div>
           <div>
             <img src="images/fruit3.png" alt="Mango">
@@ -212,6 +229,252 @@
           <div>
             <img src="images/fruit5.png" alt="Pomegranate">
             <p>Pomegranate</p>
+          </div>
+        </div>
+      </section>
+      <!-- Deal of the day -->
+      <section class="mt-[20px] md:mt-[150px] lg:mt-[250px] flex flex-col justify-between lg:flex-row ">
+        <div class="space-y-[20px]">
+          <h1 class="text-5xl font-extrabold">Deal of the day</h1>
+          <p class="lg:w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max md:justify-center">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:29;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:25;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:08;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Deal of the day card -->
+      <section class="mt-[48px] flex flex-col lg:flex-row gap-[24px] justify-center">
+        <!-- Card-1 -->
+        <div class="card justify-center items-center text-center lg:w-[250px] h-[477px] rounded-none lg:border-2">
+          <figure><img src="images/fruit6.png" alt="Apple" /></figure>
+          <div class="grid text-center justify-items-center">
+            <h2 class="card-title mt-[48px]">12.90$ - 18.85$</h2>
+            <div class="divider w-[244px]"></div>
+            <p>Apples</p>
+            <div class="rating mt-[24px]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <!-- The button to open modal -->
+            <a href="#my_modal_8" class="text-red-400 mt-[42px]">Details</a>
+            <!-- Put this part before body tag -->
+            <div class="modal" role="dialog" id="my_modal_8">
+              <div class="modal-box grid justify-items-center text-center">
+                <img src="images/fruit6.png" alt="apple">
+                <h3 class="font-extrabold text-[40px]">Apple</h3>
+                <p class="py-4 lg:w-[415px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                <div class="modal-action">
+                <a href="#" class="btn text-bg-color border-bg-color">Close</a>
+                <a href="#" class="btn bg-bg-color text-white">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="card justify-center items-center text-center lg:w-[250px] h-[477px] rounded-none lg:border-2">
+          <figure><img src="images/fruit7.png" alt="Orange" /></figure>
+          <div class="grid text-center justify-items-center">
+            <h2 class="card-title mt-[48px]">12.90$ - 18.85$</h2>
+            <div class="divider w-[244px]"></div>
+            <p>Orange</p>
+            <div class="rating mt-[24px]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <!-- The button to open modal -->
+            <a href="#my_modal_9" class="text-red-400 mt-[42px]">Details</a>
+            <!-- Put this part before body tag -->
+            <div class="modal" role="dialog" id="my_modal_9">
+              <div class="modal-box grid justify-items-center text-center">
+                <img src="images/fruit7.png" alt="Orange">
+                <h3 class="font-extrabold text-[40px]">Orange</h3>
+                <p class="py-4 lg:w-[415px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                <div class="modal-action">
+                <a href="#" class="btn text-bg-color border-bg-color">Close</a>
+                <a href="#" class="btn bg-bg-color text-white">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card-3 -->
+        <div class="card justify-center items-center text-center lg:w-[250px] h-[477px] rounded-none lg:border-2">
+          <figure><img src="images/fruit8.png" alt="Red Dragon" /></figure>
+          <div class="grid text-center justify-items-center">
+            <h2 class="card-title mt-[48px]">12.90$ - 18.85$</h2>
+            <div class="divider w-[244px]"></div>
+            <p>Red Dragon</p>
+            <div class="rating mt-[24px]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <!-- The button to open modal -->
+            <a href="#my_modal_10" class="text-red-400 mt-[42px]">Details</a>
+            <!-- Put this part before body tag -->
+            <div class="modal" role="dialog" id="my_modal_10">
+              <div class="modal-box grid justify-items-center text-center">
+                <img src="images/fruit8.png" alt="Red Dragon">
+                <h3 class="font-extrabold text-[40px]">Red Dragon</h3>
+                <p class="py-4 lg:w-[415px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                <div class="modal-action">
+                <a href="#" class="btn text-bg-color border-bg-color">Close</a>
+                <a href="#" class="btn bg-bg-color text-white">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card-4 -->
+        <div class="card justify-center items-center text-center lg:w-[250px] h-[477px] rounded-none lg:border-2">
+          <figure><img src="images/fruit9.png" alt="Banana" /></figure>
+          <div class="grid text-center justify-items-center">
+            <h2 class="card-title mt-[48px]">12.90$ - 18.85$</h2>
+            <div class="divider w-[244px]"></div>
+            <p>Banana</p>
+            <div class="rating mt-[24px]">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <!-- The button to open modal -->
+            <a href="#my_modal_11" class="text-red-400 mt-[42px]">Details</a>
+            <!-- Put this part before body tag -->
+            <div class="modal" role="dialog" id="my_modal_11">
+              <div class="modal-box grid justify-items-center text-center">
+                <img src="images/fruit9.png" alt="Banana">
+                <h3 class="font-extrabold text-[40px]">Banana</h3>
+                <p class="py-4 lg:w-[415px]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                </div>
+                <div class="modal-action">
+                <a href="#" class="btn text-bg-color border-bg-color">Close</a>
+                <a href="#" class="btn bg-bg-color text-white">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Shop All Button -->
+      <section class="grid justify-center mt-[48px]">
+        <button class="btn bg-bg-color text-white ">Shop All</button>
+      </section>
+      <!-- Meet the team section -->
+      <section class="team-banner lg:h-[690px] mt-[50px] lg:mt-[140px]">
+        <div class="grid justify-items-center text-center pt-[120px]">
+          <div>
+          <h1 class="lg:text-5xl font-extrabold text-white">Meet the team section</h1>
+          <p class="text-white lg:w-[615px] pt-[24px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <!-- Team member -->
+          <div class="flex flex-col lg:flex-row gap-[120px] text-center pt-[48px]">
+            <!-- Member-1 -->
+            <div class="grid justify-items-center">
+              <img src="images/member1.png" alt="member-1">
+              <h1 class="lg:text-[24px] font-bold text-white lg:pt-[32px]">Awlad Hossain</h1>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex justify-center gap-[10px] pt-[23px]">
+                <a href=""><img src="images/sm-icons-facebook-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/every-social-media-logo-and-icon-in-one-handy-place-instagram-app-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/sm-icons-linkedin-in-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+              </div>
+            </div>
+            <!-- Member-2 -->
+            <div class="grid justify-items-center">
+              <img src="images/member2.png" alt="member-2">
+              <h1 class="lg:text-[24px] font-bold text-white lg:pt-[32px]">Safia Chowdhury</h1>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex justify-center gap-[10px] pt-[23px]">
+                <a href=""><img src="images/sm-icons-facebook-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/every-social-media-logo-and-icon-in-one-handy-place-instagram-app-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/sm-icons-linkedin-in-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+              </div>
+            </div>
+            <!-- Member-3 -->
+            <div class="grid justify-items-center">
+              <img src="images/member3.png" alt="member-3">
+              <h1 class="lg:text-[24px] font-bold text-white lg:pt-[32px]">Rokib Hossain</h1>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex justify-center gap-[10px] pt-[23px]">
+                <a href=""><img src="images/sm-icons-facebook-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/every-social-media-logo-and-icon-in-one-handy-place-instagram-app-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/sm-icons-linkedin-in-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+              </div>
+            </div>
+            <!-- Member-4 -->
+            <div class="grid justify-items-center">
+              <img src="images/member4.png" alt="member-4">
+              <h1 class="lg:text-[24px] font-bold text-white lg:pt-[32px]">Chaity</h1>
+              <p class="text-white">Fruits Expert</p>
+              <div class="flex justify-center gap-[10px] pt-[23px]">
+                <a href=""><img src="images/sm-icons-facebook-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/every-social-media-logo-and-icon-in-one-handy-place-instagram-app-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+                <a href=""><img src="images/sm-icons-linkedin-in-logo.webp" alt="facebook" class="w-[24px] h-[24px]"></a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
